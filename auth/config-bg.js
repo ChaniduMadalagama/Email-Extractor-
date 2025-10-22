@@ -1,4 +1,4 @@
-window.firebaseConfig = {
+export const firebaseConfig = {
     apiKey: "AIzaSyCfGmzr6Tpt-TkfjUDSBHq0p67S_UuKXbI",
     authDomain: "email-extractor-5337c.firebaseapp.com",
     projectId: "email-extractor-5337c",
@@ -8,7 +8,7 @@ window.firebaseConfig = {
     measurementId: "G-MVZKHXK4DS"
 };
 
-window.config = {
+export const config = {
     host: "https://www.productivityimprover.com",
     productId: "googlemapsscraper",
     proPriceId: "price_1SJnUVPsuDZZb4ktCbIVXgBL",

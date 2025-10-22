@@ -1,1 +1,5 @@
-try { importScripts("lib/firebase-app.js", "lib/firebase-auth.js", "auth/config.js", "auth/feedback/feedback.js", "auth/loginbg.js"), importScripts("js/mybg.js") } catch (a) { console.error(a) };
+import './lib/firebase-app.js';
+import './lib/firebase-auth.js';
+import './auth/feedback/feedback.js';
+import './auth/loginbg.js';
+import './js/mybg.js';

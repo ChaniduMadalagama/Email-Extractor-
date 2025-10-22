@@ -2,8 +2,11 @@
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 
-const provider = new firebase.auth.GoogleAuthProvider();
-auth.signInWithPopup(provider)
+auth.setPersistence(firebase.auth.Auth.Persistence.NONE)
+    .then(() => {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        return auth.signInWithPopup(provider);
+    })
     .then((result) => {
         const user = result.user;
         chrome.storage.sync.set({
